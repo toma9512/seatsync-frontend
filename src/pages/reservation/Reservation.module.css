@@ -1,0 +1,214 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+/* 예약 확정 페이지 */
+.box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  margin-top: 60px;
+}
+
+.box h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.desc {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.timerLabel {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.timerValue {
+  font-size: 48px;
+  font-weight: 700;
+  color: #4f46e5;
+  font-variant-numeric: tabular-nums;
+}
+
+.timerValue.urgent {
+  color: #ef4444;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.confirmBtn {
+  padding: 14px 40px;
+  background-color: #4f46e5;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.confirmBtn:hover:not(:disabled) {
+  background-color: #4338ca;
+}
+
+.confirmBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  padding: 14px 40px;
+  background-color: #f5f5f5;
+  color: #666;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cancelBtn:hover {
+  background-color: #e0e0e0;
+}
+
+/* 내 예약 목록 */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reservationCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reservationInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.seatInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.seatNumber {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.grade {
+  padding: 3px 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.date {
+  font-size: 13px;
+  color: #888;
+}
+
+.reservationRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cancelBtn2 {
+  padding: 8px 18px;
+  background: none;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.cancelBtn2:hover {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: #888;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px;
+  color: #888;
+}
+
+.confirmBtn2 {
+  padding: 8px 18px;
+  background: none;
+  border: 1px solid #f59e0b;
+  color: #f59e0b;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.confirmBtn2:hover {
+  background-color: #f59e0b;
+  color: #fff;
+}
